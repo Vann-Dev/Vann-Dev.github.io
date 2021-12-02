@@ -1,0 +1,61 @@
+.fadeIn {
+    animation-duration: 3s;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeOut {
+    animation-duration: 1s;
+    animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.slideRight {
+    animation-duration: 1s;
+    animation-name: slideRight;
+}
+
+@keyframes slideRight {
+    from {
+        margin-left: 100%;
+        width: 500%;
+    }
+
+    to{
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+
+.slideRightHide {
+    animation-duration: 1s;
+    animation-name: slideRightHide;
+}
+
+@keyframes slideRightHide {
+    from {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    to{
+        margin-left: 100%;
+        width: 500%;
+    }
+}
