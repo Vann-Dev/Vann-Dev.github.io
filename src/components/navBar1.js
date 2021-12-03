@@ -18,7 +18,7 @@ export default function NavBar1() {
 
     return (
         <>
-            <nav style={{ 'backgroundColor': "#111827" }} className="flex fixed w-full justify-between items-center p-6">
+            <nav style={{ 'backgroundColor': "#111827" }} className="flex fixed z-30 w-full justify-between items-center p-6">
                 <div>
                     <a className="font-yellowTail text-white text-2xl md:text-4xl" href="/">Vann-Dev</a>
                 </div>
