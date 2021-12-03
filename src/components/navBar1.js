@@ -38,7 +38,6 @@ export default function NavBar1() {
                     <div className="grid space-y-24 text-center mt-10 font-outfit">
                         <a onClick={hideShow} className="text-gray-300 mt-auto mb-auto text-3xl" href={"#about"}>ABOUT</a>
                         <a onClick={hideShow} className="text-gray-300 mt-auto mb-auto text-3xl" href={"#work"}>WORK</a>
-                        <a onClick={hideShow} className="text-gray-300 mt-auto mb-auto text-3xl" href={"#blog"}>BLOG</a>
                     </div>
                 </div>
             </div>
