@@ -58,6 +58,24 @@ export default function Work() {
                         </p>
                     </div>
                 </div>
+                <div className="w-full h-auto bg-gray-300 rounded-md">
+                    <div className="p-2">
+                        <a href="https://vann-dev-discord.netlify.app/">
+                            <img className="rounded-md hover:opacity-70 transition duration-500 ease-in-out transform hover:scale-90" src="https://imgur.com/7fv1vsQ.png" alt="Discord copy" />
+                        </a>
+                    </div>
+                    <div className="p-2">
+                        <h4 className="text-black text-xl font-outfit text-center">
+                            Discord copy
+                        </h4>
+                        <p className="text-black font-outfit text-center mt-3">
+                            Discord copy but only ui
+                        </p>
+                        <p className="text-black mt-4 text-xs">
+                            Project since: December 2021
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     )

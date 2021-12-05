@@ -7,7 +7,7 @@ import Work from "../components/pages/work";
 export default function Home() {
 
     function job() {
-        const jobs = ['Verified Discord bot developer', 'Web developer', 'BackEnd developer']
+        const jobs = ['Verified Discord bot developer', 'Web developer', 'FrontEnd developer']
         setInterval(() => {
             document.getElementById('job').innerHTML = jobs[Math.floor(Math.random() * jobs.length)]
         }, 5000);
