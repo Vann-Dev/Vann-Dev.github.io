@@ -6,7 +6,7 @@ export default function Work() {
             <div className="grid lg:grid-cols-2 mt-12 space-y-6 lg:space-y-0 lg:gap-4">
                 <div className="w-full h-auto bg-gray-300 rounded-md">
                     <div className="p-2">
-                        <a href="overtunes.me">
+                        <a href="https://overtunes.me">
                             <img className="rounded-md hover:opacity-70 transition duration-500 ease-in-out transform hover:scale-90" src="https://imgur.com/LvEjo2e.png" alt="Overtunes" />
                         </a>
                     </div>
@@ -42,7 +42,7 @@ export default function Work() {
                 </div>
                 <div className="w-full h-auto bg-gray-300 rounded-md">
                     <div className="p-2">
-                        <a href="vann-dev.github.io">
+                        <a href="/">
                             <img className="rounded-md hover:opacity-70 transition duration-500 ease-in-out transform hover:scale-90" src="https://imgur.com/jGxjMtG.png" alt="Personal website" />
                         </a>
                     </div>
