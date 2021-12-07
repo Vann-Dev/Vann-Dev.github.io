@@ -76,6 +76,24 @@ export default function Work() {
                         </p>
                     </div>
                 </div>
+                <div className="w-full h-auto bg-gray-300 rounded-md">
+                    <div className="p-2">
+                        <a href="https://aco-store.netlify.app/">
+                            <img className="rounded-md hover:opacity-70 transition duration-500 ease-in-out transform hover:scale-90" src="https://imgur.com/pLk39rC.png" alt="ACO Store" />
+                        </a>
+                    </div>
+                    <div className="p-2">
+                        <h4 className="text-black text-xl font-outfit text-center">
+                            ACO Store
+                        </h4>
+                        <p className="text-black font-outfit text-center mt-3">
+                            A simple website when im bored
+                        </p>
+                        <p className="text-black mt-4 text-xs">
+                            Project since: December 2021
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     )

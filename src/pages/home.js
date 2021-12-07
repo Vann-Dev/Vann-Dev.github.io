@@ -30,8 +30,12 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <About />
-            <Work />
+            <div data-aos="fade-right" data-aos-duration="2000">
+                <About />
+            </div>
+            <div data-aos="fade-right" data-aos-duration="2000">
+                <Work />
+            </div>
             <Footer />
         </>
     )
