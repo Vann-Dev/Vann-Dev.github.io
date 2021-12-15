@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function NavBar1() {
     function hideShow() {
         const element = document.getElementById('navBarAnimation')
@@ -38,6 +40,7 @@ export default function NavBar1() {
                     <div className="grid space-y-24 text-center mt-10 font-outfit">
                         <a onClick={hideShow} className="text-gray-300 mt-auto mb-auto text-3xl" href={"#about"}>ABOUT</a>
                         <a onClick={hideShow} className="text-gray-300 mt-auto mb-auto text-3xl" href={"#work"}>WORK</a>
+                        <Link onClick={hideShow} className="text-gray-300 mt-auto mb-auto text-3xl" to={"/moe"}>Moe</Link>
                     </div>
                 </div>
             </div>

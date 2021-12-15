@@ -10,12 +10,14 @@
     "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-head": "^3.4.0",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
+    "typed.js": "^2.0.12",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start && npx tailwindcss -o src/index.css -w",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

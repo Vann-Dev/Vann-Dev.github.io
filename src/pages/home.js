@@ -9,9 +9,10 @@ export default function Home() {
     function job() {
         const jobs = ['Verified Discord bot developer', 'Web developer', 'FrontEnd developer']
         setInterval(() => {
-            document.getElementById('job').innerHTML = jobs[Math.floor(Math.random() * jobs.length)]
+            if (document.getElementById('job')) {
+                document.getElementById('job').innerHTML = jobs[Math.floor(Math.random() * jobs.length)]
+            }
         }, 5000);
-
     }
 
     return (
