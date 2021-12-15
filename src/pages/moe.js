@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 export default function Moe() {
     const audio = [
         {
-            'title': 'Listen.moe Japan',
-            'audio': 'https://listen.moe/fallback'
+            'title': 'Listen Moe Jpop',
+            'audio': 'https://listen.moe/stream'
         },
         {
-            'title': 'Listen.moe Kpop',
-            'audio': 'https://listen.moe/kpop/fallback'
-        },
+            'title': 'Listen Moe Kpop',
+            'audio': 'https://listen.moe/kpop/stream'
+        }
     ]
 
     let queue = 0;
@@ -20,9 +20,7 @@ export default function Moe() {
         document.querySelector('#play').classList.add('hidden')
         document.querySelector('#pause').classList.remove('hidden')
         document.querySelector('source').src = audio[queue].audio
-        document.querySelector('#audio').load()
-        document.querySelector('#audio').play()
-        title()
+        playAudio()
     }
 
     function pause() {
@@ -43,15 +41,11 @@ export default function Moe() {
         if (queue === audio.length - 1) {
             queue = 0;
             document.querySelector('source').src = audio[queue].audio;
-            document.querySelector('#audio').load();
-            document.querySelector('#audio').play();
-            title()
+            playAudio()
         } else {
             ++queue;
             document.querySelector('source').src = audio[queue].audio;
-            document.querySelector('#audio').load();
-            document.querySelector('#audio').play();
-            title()
+            playAudio()
         }
     }
 
@@ -60,15 +54,11 @@ export default function Moe() {
         if (queue === 0) {
             queue = audio.length - 1;
             document.querySelector('source').src = audio[queue].audio;
-            document.querySelector('#audio').load();
-            document.querySelector('#audio').play();
-            title()
+            playAudio()
         } else {
             --queue;
             document.querySelector('source').src = audio[queue].audio;
-            document.querySelector('#audio').load();
-            document.querySelector('#audio').play();
-            title()
+            playAudio()
         }
     }
 
@@ -77,6 +67,13 @@ export default function Moe() {
             document.querySelector('#title').innerHTML = audio[queue].title;
         }
     }
+
+    function playAudio() {
+        document.querySelector('#audio').load();
+        document.querySelector('#audio').play();
+        title();
+    }
+
     return (
         <>
             <HeadProvider>
